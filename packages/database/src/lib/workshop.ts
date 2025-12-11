@@ -7,7 +7,7 @@ import { FrontMatterParseResult, parseFrontMatter } from '../../../website/src/a
 import { createEntry } from './entry.js';
 import { getGitHubRepoUrl } from './util.js';
 
-const mainBranch = 'main';
+const mainBranch = 'hosted';
 
 export interface FileInfo extends FrontMatterParseResult {
   path: string;
