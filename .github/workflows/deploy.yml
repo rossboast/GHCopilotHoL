@@ -35,12 +35,6 @@ jobs:
       run: npm run build:website -- --base-href '/GHCopilotHoL/'
       env:
         SEARCH_URL: ${{ secrets.SEARCH_URL }}
-    - name: Verify workshops.json in build output
-      run: |
-        echo "Checking workshops.json in dist..."
-        ls -lh packages/website/dist/website/workshops.json
-        echo "First github-copilot entry in deployed workshops.json:"
-        grep -A 3 '"github-copilot/"' packages/website/dist/website/workshops.json | head -5
     - name: Setup GitHub Pages
       uses: actions/configure-pages@v4
     - name: Upload artifact
