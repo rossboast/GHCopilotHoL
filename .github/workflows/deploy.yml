@@ -32,7 +32,7 @@ jobs:
       env:
         GITHUB_REPO_URL: ${{ github.event.repository.html_url }}
     - name: Build website
-      run: npm run build:website -- --base-href "$BASE_HREF"
+      run: npm run build:website
       env:
         SEARCH_URL: ${{ secrets.SEARCH_URL }}
         BASE_HREF: /GHCopilotHoL/
