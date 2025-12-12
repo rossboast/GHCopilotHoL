@@ -990,16 +990,16 @@ Do not hesitate to play with the different models that are available to you, you
 
 ### Step 3: Advanced code editing
 
-Copilot in Agent mode can help you run heavy code editing tasks. As it's based on LLM that can naturally talk multiple languages, it's a great opportunity to help add multi-language support to our application.
+Copilot in Agent mode can help you run heavy code editing tasks. As it uses an LLM model that can naturally talk multiple languages, it's a great opportunity to help add multi-lingual support to our application.
 
-Open Copilot in Agent mode and again Select a premium Model (ie: GPT5, Claude Sonnet 4 or 4.5)
+Open Copilot in Agent mode and again Select a premium Model (ie: GPT5, Claude Sonnet 4.5, etc)
 
 ```markdown
 Add multi-language support to the album viewer app. Use translations files to define values for each language and add a selector for the language on the header of the application. The default language remain English but we also want to add French and German support.
 ```
 
 
-### Setup MCP Servers
+### Step 4: Setup MCP Servers
 
 **What are MCP Server?** - according to https://modelcontextprotocol.io/
 
@@ -1053,7 +1053,7 @@ With the dedicated extensions, you can install and manage MCP servers directly f
 
 </div>
 
-### Step 3: Create an issue
+### Step 5: Create an issue
 
 <div class="info" data-title="note">
 
@@ -1100,7 +1100,7 @@ Accept it and the issue is now created on your project.
 
 ![Issue created confirmation](assets/add-issue-confirmation.png)
 
-### Step 4: Implement the cart feature
+### Step 6: Implement the cart feature
 
 Now that we have an issue let's start working on it's implementation. On the Agent mode, be sure to select a premium model (Claude Sonnet 3.7 here but similar models are fine), add the app folder for better context targeting and simply ask to implement the issue.
 
@@ -1111,7 +1111,7 @@ After some work your application should have a functional cart feature:
 
 Once again, once you reached a new milestone, don't forget to validate the changes by clicking `Keep` and commit the changes.
 
-### Step 5: Test the feature with Playwright
+### Step 7: Test the feature with Playwright
 
 Now that our feature is ready, it's time to create the tests for it. We are working on a front end application so testing logic with unit test is interesting but does not allow to validate UI interactions.
 
