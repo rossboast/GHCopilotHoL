@@ -32,9 +32,10 @@ jobs:
       env:
         GITHUB_REPO_URL: ${{ github.event.repository.html_url }}
     - name: Build website
-      run: npm run build:website -- --base-href '/GHCopilotHoL/'
+      run: npm run build:website -- --base-href "$BASE_HREF"
       env:
         SEARCH_URL: ${{ secrets.SEARCH_URL }}
+        BASE_HREF: /GHCopilotHoL/
     - name: Setup GitHub Pages
       uses: actions/configure-pages@v4
     - name: Upload artifact
